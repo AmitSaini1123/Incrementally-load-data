@@ -1,0 +1,9 @@
+{
+	"name": "incrementally-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0c034b4b-95a2-41ab-a77b-acdf7ab14d94",
+		"tenantId": "9177515a-4b26-41e7-bbb3-b0ca193140f3"
+	}
+}
