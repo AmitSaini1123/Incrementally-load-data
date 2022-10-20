@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "incrementally-adf"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"IncrementallyAzureDataLakeStorageLinkedService_accountKey": {
+			"value": ""
+		},
+		"IncrementallyAzureSqlDatabaseLinkService_connectionString": {
+			"value": ""
+		},
+		"IncrementallyAzureDataLakeStorageLinkedService_properties_typeProperties_url": {
+			"value": "https://incrementallystorage.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
