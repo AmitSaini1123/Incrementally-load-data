@@ -185,6 +185,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"folderPath": "Data",
 						"fileSystem": "inputdata"
 					},
 					"columnDelimiter": ",",
@@ -219,9 +220,16 @@
 						"typeProperties": {
 							"source": {
 								"type": "DelimitedTextSource",
+								"additionalColumns": [
+									{
+										"name": "FilePath",
+										"value": "$$FILEPATH"
+									}
+								],
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
 									"recursive": true,
+									"wildcardFolderPath": "Data",
 									"wildcardFileName": "*",
 									"enablePartitionDiscovery": false
 								},
