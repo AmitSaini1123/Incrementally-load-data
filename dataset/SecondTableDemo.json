@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "FirstTableDemo.csv",
+				"fileName": "SecondTableDemo.csv",
 				"folderPath": "outputData",
 				"fileSystem": "outputdata"
 			},

@@ -157,7 +157,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "FirstTableDemo",
+						"referenceName": "SecondTableDemo",
 						"type": "DatasetReference"
 					}
 				],
