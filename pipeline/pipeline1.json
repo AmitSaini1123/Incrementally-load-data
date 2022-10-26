@@ -44,6 +44,13 @@
 									"value": "@utcnow()",
 									"type": "Expression"
 								}
+							},
+							{
+								"name": "ADFName",
+								"value": {
+									"value": "@pipeline().DataFactory",
+									"type": "Expression"
+								}
 							}
 						],
 						"storeSettings": {
