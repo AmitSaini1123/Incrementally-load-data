@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "pipeline2",
 	"properties": {
 		"activities": [
 			{
@@ -20,7 +20,6 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
-							"wildcardFolderPath": "Data",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -46,7 +45,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Table_second",
+						"referenceName": "DemoData",
 						"type": "DatasetReference"
 					}
 				],
