@@ -257,7 +257,13 @@
 							},
 							"sink": {
 								"type": "AzureSqlSink",
-								"writeBehavior": "insert",
+								"writeBehavior": "upsert",
+								"upsertSettings": {
+									"useTempDB": true,
+									"keys": [
+										"id"
+									]
+								},
 								"sqlWriterUseTableLock": false,
 								"disableMetricsCollection": false
 							},
@@ -280,7 +286,7 @@
 						],
 						"outputs": [
 							{
-								"referenceName": "AzureSqlTwoTable",
+								"referenceName": "AzureSqlTableDemodata",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -295,7 +301,7 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/DemoData')]",
-				"[concat(variables('factoryId'), '/datasets/AzureSqlTwoTable')]"
+				"[concat(variables('factoryId'), '/datasets/AzureSqlTableDemodata')]"
 			]
 		},
 		{
@@ -350,6 +356,52 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/IncrementallyAzureDataLakeStorageLinkedService')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlTableDemodata')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "IncrementallyAzureSqlDatabaseLinkService",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"schema": [
+					{
+						"name": "id",
+						"type": "varchar"
+					},
+					{
+						"name": "first_name",
+						"type": "varchar"
+					},
+					{
+						"name": "last_name",
+						"type": "varchar"
+					},
+					{
+						"name": "email",
+						"type": "varchar"
+					},
+					{
+						"name": "gender",
+						"type": "varchar"
+					},
+					{
+						"name": "address",
+						"type": "varchar"
+					}
+				],
+				"typeProperties": {
+					"schema": "dbo",
+					"table": "DemoData"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/IncrementallyAzureSqlDatabaseLinkService')]"
 			]
 		}
 	]
