@@ -23,8 +23,8 @@
 								"value": "$$FILEPATH"
 							},
 							{
-								"name": "ColumnName",
-								"value": "$$COLUMN:id"
+								"name": "DateName",
+								"value": "DateFile"
 							}
 						],
 						"storeSettings": {
