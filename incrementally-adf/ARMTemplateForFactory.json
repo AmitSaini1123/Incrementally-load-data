@@ -53,7 +53,7 @@
 									"type": "AzureBlobFSReadSettings",
 									"recursive": true,
 									"wildcardFolderPath": "Data",
-									"wildcardFileName": "Table_first.csv",
+									"wildcardFileName": "Table_second.csv",
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
@@ -79,7 +79,7 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "TwoTable",
+								"referenceName": "Table_second",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -100,7 +100,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/TwoTable')]",
+				"[concat(variables('factoryId'), '/datasets/Table_second')]",
 				"[concat(variables('factoryId'), '/datasets/AzureSqlTwoTable')]"
 			]
 		},
@@ -118,7 +118,7 @@
 				"schema": [],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "Table_first"
+					"table": "Table_second"
 				}
 			},
 			"dependsOn": [
@@ -126,7 +126,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/TwoTable')]",
+			"name": "[concat(parameters('factoryName'), '/Table_second')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -139,6 +139,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "Table_second.csv",
 						"folderPath": "Data",
 						"fileSystem": "inputdata"
 					},
