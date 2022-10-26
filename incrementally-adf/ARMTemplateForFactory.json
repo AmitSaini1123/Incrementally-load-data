@@ -48,17 +48,9 @@
 						"userProperties": [],
 						"typeProperties": {
 							"source": {
-								"type": "DelimitedTextSource",
-								"storeSettings": {
-									"type": "AzureBlobFSReadSettings",
-									"recursive": true,
-									"wildcardFolderPath": "Data",
-									"wildcardFileName": "*",
-									"enablePartitionDiscovery": false
-								},
-								"formatSettings": {
-									"type": "DelimitedTextReadSettings"
-								}
+								"type": "AzureSqlSource",
+								"queryTimeout": "02:00:00",
+								"partitionOption": "None"
 							},
 							"sink": {
 								"type": "AzureSqlSink",
@@ -79,7 +71,7 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "TwoTable",
+								"referenceName": "AzureSqlTwoTable",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -100,7 +92,6 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/TwoTable')]",
 				"[concat(variables('factoryId'), '/datasets/AzureSqlTwoTable')]"
 			]
 		},
