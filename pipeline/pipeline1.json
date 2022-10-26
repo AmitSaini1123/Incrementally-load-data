@@ -21,6 +21,10 @@
 							{
 								"name": "FileName",
 								"value": "$$FILEPATH"
+							},
+							{
+								"name": "ColumnName",
+								"value": "$$COLUMN:id"
 							}
 						],
 						"storeSettings": {
