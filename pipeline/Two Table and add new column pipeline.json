@@ -21,13 +21,6 @@
 							{
 								"name": "FileName",
 								"value": "$$FILEPATH"
-							},
-							{
-								"name": "DateTime",
-								"value": {
-									"value": "utcnow()",
-									"type": "Expression"
-								}
 							}
 						],
 						"storeSettings": {
