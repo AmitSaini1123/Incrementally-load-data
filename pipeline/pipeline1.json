@@ -37,6 +37,13 @@
 									"value": "@pipeline().Pipeline",
 									"type": "Expression"
 								}
+							},
+							{
+								"name": "LastModifyDate",
+								"value": {
+									"value": "@utcnow()",
+									"type": "Expression"
+								}
 							}
 						],
 						"storeSettings": {
@@ -114,13 +121,6 @@
 								},
 								"sink": {
 									"name": "FileName",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
-							},
-							{
-								"sink": {
-									"name": "DateName",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
