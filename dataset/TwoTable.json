@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "Table_second.csv",
 				"folderPath": "Data",
 				"fileSystem": "inputdata"
 			},

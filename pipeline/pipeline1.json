@@ -21,7 +21,7 @@
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
 							"wildcardFolderPath": "Data",
-							"wildcardFileName": "Table_first.csv",
+							"wildcardFileName": "Table_second.csv",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
