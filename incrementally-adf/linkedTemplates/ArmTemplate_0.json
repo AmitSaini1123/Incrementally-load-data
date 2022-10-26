@@ -732,7 +732,7 @@
 										"sink": {
 											"name": "id",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
@@ -744,7 +744,7 @@
 										"sink": {
 											"name": "first_name",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
@@ -756,7 +756,7 @@
 										"sink": {
 											"name": "last_name",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
@@ -768,7 +768,7 @@
 										"sink": {
 											"name": "gender",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
@@ -779,7 +779,29 @@
 										"sink": {
 											"name": "FileName",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "PipelineName",
+											"type": "String"
+										},
+										"sink": {
+											"name": "PipelineName",
+											"type": "String",
+											"physicalType": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "LastModifyDate",
+											"type": "String"
+										},
+										"sink": {
+											"name": "LastModifyDate",
+											"type": "String",
+											"physicalType": "String"
 										}
 									}
 								],
