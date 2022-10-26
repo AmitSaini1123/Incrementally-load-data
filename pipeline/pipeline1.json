@@ -153,6 +153,17 @@
 									"type": "String",
 									"physicalType": "String"
 								}
+							},
+							{
+								"source": {
+									"name": "ADFName",
+									"type": "String"
+								},
+								"sink": {
+									"name": "ADFName",
+									"type": "String",
+									"physicalType": "String"
+								}
 							}
 						],
 						"typeConversion": true,
