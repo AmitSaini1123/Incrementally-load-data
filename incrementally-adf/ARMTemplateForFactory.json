@@ -53,7 +53,7 @@
 									"type": "AzureBlobFSReadSettings",
 									"recursive": true,
 									"wildcardFolderPath": "Data",
-									"wildcardFileName": "*.*",
+									"wildcardFileName": "*",
 									"enablePartitionDiscovery": false
 								},
 								"formatSettings": {
