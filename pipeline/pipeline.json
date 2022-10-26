@@ -1,5 +1,5 @@
 {
-	"name": "Insert Upsert pipeline",
+	"name": "pipeline",
 	"properties": {
 		"activities": [
 			{
