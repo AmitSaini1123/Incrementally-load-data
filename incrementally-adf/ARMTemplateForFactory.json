@@ -554,7 +554,7 @@
 				"schema": [],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "DemoTable"
+					"table": "DemoTableSecond"
 				}
 			},
 			"dependsOn": [
@@ -645,36 +645,36 @@
 									},
 									{
 										"source": {
-											"name": "first_name",
+											"name": "firstName",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "first_name",
+											"name": "firstName",
 											"type": "String",
 											"physicalType": "String"
 										}
 									},
 									{
 										"source": {
-											"name": "last_name",
+											"name": "lastName",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "last_name",
+											"name": "lastName",
 											"type": "String",
 											"physicalType": "String"
 										}
 									},
 									{
 										"source": {
-											"name": "gender",
+											"name": "City",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "gender",
+											"name": "City",
 											"type": "String",
 											"physicalType": "String"
 										}
