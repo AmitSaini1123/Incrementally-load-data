@@ -23,8 +23,11 @@
 								"value": "$$FILEPATH"
 							},
 							{
-								"name": "DateName",
-								"value": "DateFile"
+								"name": "PipelineName",
+								"value": {
+									"value": "@pipeline().Pipeline",
+									"type": "Expression"
+								}
 							}
 						],
 						"storeSettings": {
