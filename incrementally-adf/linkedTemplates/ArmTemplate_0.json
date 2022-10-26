@@ -701,6 +701,16 @@
 											"value": "@utcnow()",
 											"type": "Expression"
 										}
+									},
+									{
+										"name": "ADFName",
+										"value": {
+											"value": "@pipeline().DataFactory",
+											"type": "Expression"
+										}
+									},
+									{
+										"value": "$$FILEPATH"
 									}
 								],
 								"storeSettings": {
@@ -800,6 +810,17 @@
 										},
 										"sink": {
 											"name": "LastModifyDate",
+											"type": "String",
+											"physicalType": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "ADFName",
+											"type": "String"
+										},
+										"sink": {
+											"name": "ADFName",
 											"type": "String",
 											"physicalType": "String"
 										}
