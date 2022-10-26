@@ -25,7 +25,7 @@
 							{
 								"name": "PipelineName",
 								"value": {
-									"value": "$$(@pipeline().Pipeline)",
+									"value": "@utcnow()",
 									"type": "Expression"
 								}
 							}
