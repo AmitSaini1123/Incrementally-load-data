@@ -1,5 +1,5 @@
 {
-	"name": "TwoTable",
+	"name": "Table_second",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "IncrementallyAzureDataLakeStorageLinkedService",

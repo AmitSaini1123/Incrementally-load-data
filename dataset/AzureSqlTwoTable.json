@@ -10,7 +10,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "Table_first"
+			"table": "Table_second"
 		}
 	}
 }

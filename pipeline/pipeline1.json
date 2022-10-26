@@ -47,7 +47,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "TwoTable",
+						"referenceName": "Table_second",
 						"type": "DatasetReference"
 					}
 				],
