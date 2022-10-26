@@ -722,7 +722,7 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "FirstTableDemo",
+								"referenceName": "SecondTableDemo",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -743,7 +743,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/FirstTableDemo')]",
+				"[concat(variables('factoryId'), '/datasets/SecondTableDemo')]",
 				"[concat(variables('factoryId'), '/datasets/AzureSqlTwoTables')]"
 			]
 		},
@@ -807,7 +807,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "FirstTableDemo.csv",
+						"fileName": "SecondTableDemo.csv",
 						"folderPath": "outputData",
 						"fileSystem": "outputdata"
 					},
