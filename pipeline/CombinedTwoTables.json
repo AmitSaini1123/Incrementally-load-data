@@ -110,6 +110,17 @@
 									"type": "String",
 									"physicalType": "String"
 								}
+							},
+							{
+								"source": {
+									"name": "DateTime",
+									"type": "String"
+								},
+								"sink": {
+									"name": "DateTime",
+									"type": "String",
+									"physicalType": "String"
+								}
 							}
 						],
 						"typeConversion": true,
