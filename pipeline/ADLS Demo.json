@@ -147,6 +147,18 @@
 							},
 							{
 								"source": {
+									"name": "staticValues",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "staticValues",
+									"type": "String",
+									"physicalType": "String"
+								}
+							},
+							{
+								"source": {
 									"name": "FileName",
 									"type": "String"
 								},
