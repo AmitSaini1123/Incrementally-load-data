@@ -161,7 +161,7 @@
 										"sink": {
 											"name": "id",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
@@ -173,7 +173,7 @@
 										"sink": {
 											"name": "first_name",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
@@ -185,19 +185,30 @@
 										"sink": {
 											"name": "last_name",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
 										"source": {
-											"name": "gender",
+											"name": "city",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "gender",
+											"name": "city",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "FilePath",
+											"type": "String"
+										},
+										"sink": {
+											"name": "FilePath",
+											"type": "String",
+											"physicalType": "String"
 										}
 									}
 								],
