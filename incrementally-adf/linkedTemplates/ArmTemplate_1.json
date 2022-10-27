@@ -139,7 +139,6 @@
 								"type": "AzureSqlSink",
 								"writeBehavior": "insert",
 								"sqlWriterUseTableLock": false,
-								"tableOption": "autoCreate",
 								"disableMetricsCollection": false
 							},
 							"enableStaging": false,
@@ -155,7 +154,7 @@
 										"sink": {
 											"name": "id",
 											"type": "String",
-											"physicalType": "String"
+											"physicalType": "nvarchar"
 										}
 									},
 									{
@@ -167,7 +166,7 @@
 										"sink": {
 											"name": "first_name",
 											"type": "String",
-											"physicalType": "String"
+											"physicalType": "nvarchar"
 										}
 									},
 									{
@@ -179,7 +178,7 @@
 										"sink": {
 											"name": "last_name",
 											"type": "String",
-											"physicalType": "String"
+											"physicalType": "nvarchar"
 										}
 									},
 									{
@@ -191,7 +190,7 @@
 										"sink": {
 											"name": "city",
 											"type": "String",
-											"physicalType": "String"
+											"physicalType": "nvarchar"
 										}
 									},
 									{
@@ -203,7 +202,7 @@
 										"sink": {
 											"name": "phone",
 											"type": "String",
-											"physicalType": "String"
+											"physicalType": "nvarchar"
 										}
 									},
 									{
@@ -214,7 +213,7 @@
 										"sink": {
 											"name": "FilePath",
 											"type": "String",
-											"physicalType": "String"
+											"physicalType": "nvarchar"
 										}
 									},
 									{
@@ -225,7 +224,7 @@
 										"sink": {
 											"name": "DateTime ",
 											"type": "String",
-											"physicalType": "String"
+											"physicalType": "nvarchar"
 										}
 									},
 									{
@@ -236,7 +235,7 @@
 										"sink": {
 											"name": "Pipeline Name",
 											"type": "String",
-											"physicalType": "String"
+											"physicalType": "nvarchar"
 										}
 									}
 								],
