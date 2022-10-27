@@ -155,7 +155,7 @@
 										"sink": {
 											"name": "id",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
@@ -167,7 +167,7 @@
 										"sink": {
 											"name": "first_name",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
@@ -179,7 +179,7 @@
 										"sink": {
 											"name": "last_name",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
@@ -191,7 +191,7 @@
 										"sink": {
 											"name": "city",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
@@ -203,7 +203,19 @@
 										"sink": {
 											"name": "phone",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "Address",
+											"type": "String",
+											"physicalType": "String"
+										},
+										"sink": {
+											"name": "Address",
+											"type": "String",
+											"physicalType": "String"
 										}
 									},
 									{
@@ -214,7 +226,7 @@
 										"sink": {
 											"name": "FilePath",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
@@ -225,7 +237,7 @@
 										"sink": {
 											"name": "DateTime ",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									},
 									{
@@ -236,7 +248,7 @@
 										"sink": {
 											"name": "Pipeline Name",
 											"type": "String",
-											"physicalType": "nvarchar"
+											"physicalType": "String"
 										}
 									}
 								],
